@@ -30,9 +30,6 @@ body {
 .site-header {
   background: var(--surface);
   border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
-  z-index: 10;
 }
 
 .header-content {
@@ -41,7 +38,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 24px 0;
+  padding: 32px 0 20px;
 }
 
 .eyebrow {
@@ -57,9 +54,19 @@ body {
 }
 
 .site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-content {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  padding: 12px 0;
 }
 
 .site-nav a {
@@ -80,6 +87,7 @@ body {
 
 .section {
   padding: 64px 0;
+  scroll-margin-top: 88px;
 }
 
 .section:nth-of-type(even) {
