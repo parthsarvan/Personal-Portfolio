@@ -229,6 +229,10 @@ p {
 }
 
 @media (max-width: 720px) {
+  :root {
+    --nav-height: 72px;
+  }
+
   .header-content {
     flex-direction: column;
     align-items: flex-start;
@@ -236,6 +240,25 @@ p {
 
   .nav-content {
     justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 8px 16px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .nav-content::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-nav {
+    height: auto;
+  }
+
+  .site-nav a {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    white-space: nowrap;
   }
 
   .contact-grid {
